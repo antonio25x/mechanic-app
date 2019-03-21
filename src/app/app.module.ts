@@ -3,10 +3,10 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
-import { ClientComponent } from './client/client.component';
+import { ClienteComponent } from './cliente/cliente.component';
 import { HomeComponent } from './home/home.component';
 import { CotizacionComponent } from './cotizacion/cotizacion.component';
-import { DocsComponent } from './docs/docs.component';
+import { DocsComponent } from './documentacion/docs.component';
 import { FacturaComponent } from './factura/factura.component';
 import { InventarioComponent } from './inventario/inventario.component';
 import { VehiculoComponent } from './vehiculo/vehiculo.component';
@@ -16,7 +16,7 @@ import { HistorialComponent } from './historial/historial.component';
 @NgModule({
   declarations: [
     AppComponent,
-    ClientComponent,
+    ClienteComponent,
     HomeComponent,
     CotizacionComponent,
     DocsComponent,
