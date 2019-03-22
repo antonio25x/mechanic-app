@@ -5,6 +5,7 @@
         <button type="button" class="btn btn-primary mx-md-2" data-toggle="modal"
             data-target="#agregar-cliente">Agregar</button>
 
+<!-- Modal for adding clients -->
         <div class="modal" id="agregar-cliente">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -31,9 +32,12 @@
                 </div>
             </div>
         </div>
+<!-- end of modal for adding clients -->
 
+
+<!-- List of clients as cards -->
         <div class="row">
-            <div class="col-lg-4 col-md-6" *ngFor="let cliente of clientes">
+            <div class="col-lg-4 col-md-6" *ngFor="let cliente of clientes; index as i">
                 <div class="card card-common my-2">
                     <div class="card-body">
                         <div class="card-title">{{cliente.nombre}}</div>
@@ -41,10 +45,13 @@
                     </div>
                     <div class="card-footer">
                         <button type="button" class="btn btn-sm btn-secondary">Editar</button>
-                        <button type="button" class="btn btn-sm btn-danger mx-2">Eliminar</button>
+                        <button type="button" class="btn btn-sm btn-danger mx-2" 
+                            (click)="removerCliente(i)">Eliminar</button>
                     </div>
                 </div>
             </div>
         </div>
+<!-- end of list of clients -->
+
     </div>
 </div>

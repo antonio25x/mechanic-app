@@ -29,4 +29,8 @@ export class ClienteComponent implements OnInit {
     this.nombre = '';
     this.direccion = '';
   }
+
+  removerCliente(index: number) {
+    this.clientes.splice(index, 1);
+  }
 }
