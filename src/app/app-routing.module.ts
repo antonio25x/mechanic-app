@@ -9,6 +9,8 @@ import { FacturaComponent } from './factura/factura.component';
 import { InventarioComponent } from './inventario/inventario.component';
 import { HistorialComponent } from './historial/historial.component';
 import { DocsComponent } from './documentacion/docs.component';
+import { ErrorComponent } from './error/error.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 const routes: Routes = [
     { path: '', component: HomeComponent },
@@ -19,7 +21,9 @@ const routes: Routes = [
     { path: 'factura', component: FacturaComponent},
     { path: 'inventario', component: InventarioComponent},
     { path: 'historial', component: HistorialComponent},
-    { path: 'docs', component: DocsComponent}
+    { path: 'docs', component: DocsComponent},
+    { path: 'not-found', component: NotFoundComponent},
+    { path: '**', redirectTo: 'not-found'}
 ];
 
 @NgModule({

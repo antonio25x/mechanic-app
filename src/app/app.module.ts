@@ -12,6 +12,8 @@ import { InventarioComponent } from './inventario/inventario.component';
 import { VehiculoComponent } from './vehiculo/vehiculo.component';
 import { OrdenesComponent } from './ordenes/ordenes.component';
 import { HistorialComponent } from './historial/historial.component';
+import { ErrorComponent } from './error/error.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { HistorialComponent } from './historial/historial.component';
     InventarioComponent,
     VehiculoComponent,
     OrdenesComponent,
-    HistorialComponent
+    HistorialComponent,
+    ErrorComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
