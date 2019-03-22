@@ -25,9 +25,10 @@ Before running the tests make sure you are serving the app via `ng serve`.
 
 ## Deploy to Github Pages
 Run the following commands.
-Note that `--no-silent` just output meaningful error messages
+*Note:* that `--no-silent` just output meaningful error messages
+*Important: DO NOT choose branch master or you will override all your changes with the contents of `/dist`*
 `ng build --prod --base-href "https://antonio25x.github.io/mechanic-app/"`
-`ngh --message="Yout commit message" --branch=master --no-silent`
+`ngh --message="Yout commit message" --branch=gh-pages --no-silent`
 
 ## Further help
 
