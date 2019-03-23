@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, NgModel, ReactiveFormsModule } from '@angular/forms';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
@@ -15,6 +16,8 @@ import { OrdenesComponent } from './ordenes/ordenes.component';
 import { HistorialComponent } from './historial/historial.component';
 import { ErrorComponent } from './error/error.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { EditarModalComponent } from './cliente/editar-modal/editar-modal.component';
+import { AgregarModalComponent } from './cliente/agregar-modal/agregar-modal.component';
 
 @NgModule({
   declarations: [
@@ -29,14 +32,18 @@ import { NotFoundComponent } from './not-found/not-found.component';
     OrdenesComponent,
     HistorialComponent,
     ErrorComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    EditarModalComponent,
+    AgregarModalComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    NgbModule
   ],
-  providers: [],
+  entryComponents: [AgregarModalComponent, EditarModalComponent],
+  providers: [NgModel],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
