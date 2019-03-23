@@ -2,6 +2,15 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.6.
 
+## Create a new Component
+
+Create a new component under src
+`ng g c [component_name]`
+
+Create a new component under app/cliente
+`cd ~src/app`
+`ng g c client/[component_name]`
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
