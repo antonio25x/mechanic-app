@@ -1,6 +1,17 @@
 <div class="row">
     <div class="col">
-        <h2>Vehiculo:</h2>
-        <p>Some text will go here in the future!</p>
+        <h2>Vehiculos</h2>
+        <div class="card-deck">
+            <div class="card card-common col-md-4" *ngFor="let vehiculo of vehiculos">
+                <a [routerLink]="['/vehiculo']" routerLinkActive="router-link-active"  class="card-link">
+                    <img class="card-img-top" src="{{vehiculo.imgUrl}}" alt="{{vehiculo.nombre}}">
+                    <div class="card-body">
+                        <h4 class="card-title">{{vehiculo.nombre}}</h4>
+                        <p class="card-text">{{vehiculo.ano}}</p>
+                        <p class="card-text">{{vehiculo.kilometros}} km</p>
+                    </div>
+                </a>
+            </div>
+        </div>
     </div>
 </div>
