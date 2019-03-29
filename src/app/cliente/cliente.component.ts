@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Cliente } from './cliente';
+import { Cliente } from './cliente.model';
 import { NgbModal, ModalDismissReasons } from '@ng-bootstrap/ng-bootstrap';
 import { AgregarModalComponent } from './agregar-modal/agregar-modal.component';
 import { EditarModalComponent } from './editar-modal/editar-modal.component';
