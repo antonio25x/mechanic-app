@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
-import { Cliente } from '../cliente';
+import { Cliente } from '../cliente.model';
 
 @Component({
   selector: 'app-editar-modal',
