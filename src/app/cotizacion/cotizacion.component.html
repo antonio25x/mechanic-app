@@ -1,6 +1,32 @@
 <div class="row">
-        <div class="col">
-            <h2>Cotizacion:</h2>
-            <p>Some text will go here in the future!</p>
-        </div>
+    <div class="col">
+        <h1><b>Cotizacion</b></h1>
+
+        <input type="button" class="btn btn-primary" (click)="abrirLineItem()" value="Agregar">
+
+        <table class="table text-left text-center">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Descripcion</th>
+                    <th scope="col">Item</th>
+                    <th scope="col">Cantidad</th>
+                    <th scope="col">Precio</th>
+                    <th scope="col">Action</th>
+                </tr>
+            </thead>
+            <tbody *ngFor="let lineItem of lineItems; let i=index">
+                <tr>
+                    <th scope="row">{{i + 1}}</th>
+                    <td>{{lineItem.descripcion}}</td>
+                    <td>{{lineItem.item}}</td>
+                    <td>{{lineItem.cantidad}}</td>
+                    <td>{{lineItem.precio}}</td>
+                    <td><button class="btn btn-secondary btn-sm mr-1" (click)="editarLineItem(i)"><i class="fas fa-edit fa-1x"></i></button>
+                        <button class="btn btn-danger btn-sm mr-1" (click)="removerLineItem(i)"><i class="fas fa-trash fa-1x"></i></button></td>
+                </tr>
+            </tbody>
+        </table>
     </div>
+
+</div>

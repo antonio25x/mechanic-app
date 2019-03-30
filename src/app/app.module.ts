@@ -18,6 +18,7 @@ import { ErrorComponent } from './error/error.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { EditarModalComponent } from './cliente/editar-modal/editar-modal.component';
 import { AgregarModalComponent } from './cliente/agregar-modal/agregar-modal.component';
+import { AgregarLineItemComponent } from './cotizacion/agregar-line-item/agregar-line-item.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { AgregarModalComponent } from './cliente/agregar-modal/agregar-modal.com
     ErrorComponent,
     NotFoundComponent,
     EditarModalComponent,
-    AgregarModalComponent
+    AgregarModalComponent,
+    AgregarLineItemComponent
   ],
   imports: [
     BrowserModule,
@@ -42,7 +44,7 @@ import { AgregarModalComponent } from './cliente/agregar-modal/agregar-modal.com
     FormsModule,
     NgbModule
   ],
-  entryComponents: [AgregarModalComponent, EditarModalComponent],
+  entryComponents: [AgregarModalComponent, EditarModalComponent, AgregarLineItemComponent],
   providers: [NgModel],
   bootstrap: [AppComponent]
 })
