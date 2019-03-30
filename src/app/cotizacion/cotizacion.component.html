@@ -4,25 +4,25 @@
 
         <input type="button" class="btn btn-primary" (click)="abrirLineItem()" value="Agregar">
 
-        <table class="table text-left text-center">
+        <table class="table">
             <thead>
                 <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">Descripcion</th>
-                    <th scope="col">Item</th>
-                    <th scope="col">Cantidad</th>
-                    <th scope="col">Precio</th>
-                    <th scope="col">Action</th>
+                    <th scope="col" class="text-left align-middle">#</th>
+                    <th scope="col" class="text-left align-middle">Descripcion</th>
+                    <th scope="col" class="text-left align-middle">Item</th>
+                    <th scope="col" class="text-left align-middle">Cantidad</th>
+                    <th scope="col" class="text-left align-middle">Precio</th>
+                    <th scope="col" class="text-left align-middle">Action</th>
                 </tr>
             </thead>
             <tbody *ngFor="let lineItem of lineItems; let i=index">
                 <tr>
-                    <th scope="row">{{i + 1}}</th>
-                    <td>{{lineItem.descripcion}}</td>
-                    <td>{{lineItem.item}}</td>
-                    <td>{{lineItem.cantidad}}</td>
-                    <td>{{lineItem.precio}}</td>
-                    <td><button class="btn btn-secondary btn-sm mr-1" (click)="editarLineItem(i)"><i class="fas fa-edit fa-1x"></i></button>
+                    <th scope="row" class="text-left align-middle">{{i + 1}}</th>
+                    <td class="text-left align-middle">{{lineItem.descripcion}}</td>
+                    <td class="text-left align-middle">{{lineItem.item}}</td>
+                    <td class="text-left align-middle">{{lineItem.cantidad}}</td>
+                    <td class="text-left align-middle">{{lineItem.precio}}</td>
+                    <td class="text-left align-middle"><button class="btn btn-secondary btn-sm mr-1" (click)="editarLineItem(i)"><i class="fas fa-edit fa-1x"></i></button>
                         <button class="btn btn-danger btn-sm mr-1" (click)="removerLineItem(i)"><i class="fas fa-trash fa-1x"></i></button></td>
                 </tr>
             </tbody>
